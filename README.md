@@ -66,7 +66,18 @@ After starting the server, you can use tools like Postman or cURL to interact wi
 - Retrieve all products:
   ```sh
   GET /api/v1/products
-  
+
+## Example URL Testing
+
+Below are some example URLs that demonstrate how to use various query parameters to filter, sort, and paginate products in the `getAllProducts` endpoint.
+
+### Example: Get Featured Products from a Specific Company
+
+Retrieve featured products from Apple, sorted by price in ascending order, displaying only the name and price fields.
+
+```plaintext
+GET /api/products?Featured=true&company=Apple&sort=price&fields=name,price
+```
 ## Contributing
 Contributions are welcome! Please fork the repository and submit a pull request with your changes.
 
